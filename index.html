@@ -34,6 +34,17 @@
             </div>
         </form>
     </div>
+     <script>
+        var modal = document.getElementById('id01');
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                document.getElementById('id01').style.animation = "animatezoomback 0.5s";
+                document.getElementById('id01').style.display = 'none';
+                document.getElementById('logocent').style.gridColumnGap = '0px';
+                document.getElementById('logocent').style.animation = "back 0.5s";
+            }
+        }
+    </script>
 </body>
 
 </html>
